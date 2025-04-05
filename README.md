@@ -18,7 +18,7 @@ docker build -t cr7-streamlit-app .
 ```bash
 docker run -p 8501:8501 cr7-streamlit-app
 ```
-###4. Abrir en el navegador
+### 4. Abrir en el navegador
 ```bash
 Visitar http://localhost:8501
 
