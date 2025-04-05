@@ -8,8 +8,13 @@ Una aplicaci√≥n hecha con [Streamlit](https://streamlit.io) para explorar estad√
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/tu-usuario/tu-repo.git
+
+```
+### ejecutar en el directorio donde se encuentren los archivos
+```bash
 cd tu-repo
 ```
+
 ### 2. Construir la imagen de Docker
 ```bash
 docker build -t cr7-streamlit-app .
