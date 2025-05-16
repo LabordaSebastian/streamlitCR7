@@ -19,9 +19,9 @@ jobs:
       - name: Build and run new container
         run: docker compose -f streamlit/docker-compose.yml up -d --build
 
-      - name: Notify on Discord
-        uses: Ilshidur/action-discord@0.6.0
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Notify on Discord (alternativa)
+        uses: tsickert/discord-webhook@v5.0.0
         with:
-          args: "🚀 Deploy exitoso en servidor local"
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
+          content: "🚀 Deploy exitoso en servidor local"
+
