@@ -24,5 +24,4 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "🚀 FastAPI deployed on local server after merge to develop"
-
+          message: "🚀 FastAPI desplegado en servidor local tras merge en develop."
