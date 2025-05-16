@@ -5,6 +5,10 @@ Una aplicación hecha con [Streamlit](https://streamlit.io) para explorar estad�
 
 **Autor:** Laborda Sebastián goat
 
+## ⚙️ Requisitos previos
+
+- Tener instalado [Docker](https://docs.docker.com/get-docker/) y [Docker Compose](https://docs.docker.com/compose/).
+
 ## 🚀 ¿Cómo usar esta app?
 
 ### 1. Clonar el repositorio
@@ -35,4 +39,10 @@ Visita [http://localhost:8501](http://localhost:8501) para ver la aplicación en
 > ```bash
 > docker-compose down
 > ```
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 
