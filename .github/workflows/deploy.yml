@@ -1,8 +1,9 @@
+---
 name: Deploy FastAPI App on Merge to Develop
 
 on:
   push:
-    branches: [develop]  # Formato simplificado y correcto
+    branches: ["develop"]
 
 jobs:
   deploy:
@@ -17,10 +18,11 @@ jobs:
         run: docker compose down || true
 
       - name: Build and run new container
-        run: docker compose up -d --build
+        run: docker compose -f streamlit/docker-compose.yml up -d --build
 
       - name: Notify on Discord
         uses: Ilshidur/action-discord@master
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "🚀 FastAPI desplegado en servidor local tras merge en develop."
+          message: "🚀 FastAPI deployed on local server after merge to develop"
+
