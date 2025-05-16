@@ -1,20 +1,12 @@
-# Imagen base oficial de Python
-FROM python:3.10-slim
+version: '3.8'
 
-# Establecer el directorio de trabajo dentro del contenedor
-WORKDIR /app
-
-# Copiar los archivos necesarios al contenedor
-COPY cristiano_stats_app.py .
-COPY cristiano_ronaldo.csv .
-COPY cr7_bg.jpg .
-COPY requirements.txt .
-
-# Instalar dependencias
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Exponer el puerto de Streamlit
-EXPOSE 8501
-
-# Comando para ejecutar la app
-CMD ["streamlit", "run", "cristiano_stats_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+services:
+  cristiano_stats_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"  # Mapeo del puerto (host:contenedor)
+    volumes:
+      - .:/app       # Montar el directorio actual en /app (opcional, para desarrollo)
+    restart: unless-stopped
