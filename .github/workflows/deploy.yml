@@ -1,4 +1,3 @@
----
 name: Deploy FastAPI App on Merge to Develop
 
 on:
@@ -25,4 +24,4 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
-          args: '{"content":"anduvo"}'
+          args: "🚀 Deploy exitoso en servidor local"
