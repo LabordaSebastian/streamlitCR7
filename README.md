@@ -3,7 +3,11 @@
 
 Una aplicación hecha con [Streamlit](https://streamlit.io) para explorar estadísticas de goles de Cristiano Ronaldo por temporada, club, competencia y tipo de gol hasta 2023.
 
-**Autor:** Laborda Sebastián goat 1
+**Autor:** Laborda Sebastián
+
+## ⚙️ Requisitos previos
+
+- Tener instalado [Docker](https://docs.docker.com/get-docker/) y [Docker Compose](https://docs.docker.com/compose/).
 
 ## 🚀 ¿Cómo usar esta app?
 
@@ -35,4 +39,10 @@ Visita [http://localhost:8501](http://localhost:8501) para ver la aplicación en
 > ```bash
 > docker-compose down
 > ```
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
 
