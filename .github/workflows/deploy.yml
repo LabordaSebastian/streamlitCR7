@@ -21,8 +21,8 @@ jobs:
         run: docker compose -f streamlit/docker-compose.yml up -d --build
 
       - name: Notify on Discord
-        uses: Ilshidur/action-discord@master
+        uses: appleboy/discord-action@v1.2.0
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           message: "🚀 FastAPI deployed on local server after merge to develop"
-
+          avatar: "https://emoji.gg/assets/emoji/1999_rocket.png"
