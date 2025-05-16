@@ -25,3 +25,4 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           message: "🚀 FastAPI deployed on local server after merge to develop"
+
