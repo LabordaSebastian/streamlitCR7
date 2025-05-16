@@ -8,22 +8,29 @@ Una aplicación hecha con [Streamlit](https://streamlit.io) para explorar estad�
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/tu-usuario/tu-repo.git
-
 ```
-### ejecutar en el directorio donde se encuentren los archivos
+
+### 2. Ir al directorio del proyecto
 ```bash
 cd tu-repo
 ```
 
-### 2. Construir la imagen de Docker
+### 3. Ejecutar la aplicación con Docker Compose
 ```bash
-docker build -t cr7-streamlit-app .
+docker-compose up --build
 ```
-### 3. Ejecutar el contenedor
-```bash
-docker run -p 8501:8501 cr7-streamlit-app
-```
+
+Esto descargará las dependencias necesarias, construirá la imagen y levantará el servicio automáticamente.
+
 ### 4. Abrir en el navegador
-```bash
-Visitar http://localhost:8501
+
+Visita [http://localhost:8501](http://localhost:8501) para ver la aplicación en funcionamiento.
+
+---
+
+> **Nota:**  
+> Para detener la aplicación, presiona `Ctrl+C` en la terminal y luego ejecuta:
+> ```bash
+> docker-compose down
+> ```
 
