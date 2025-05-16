@@ -3,7 +3,7 @@
 
 Una aplicación hecha con [Streamlit](https://streamlit.io) para explorar estadísticas de goles de Cristiano Ronaldo por temporada, club, competencia y tipo de gol hasta 2023.
 
-**Autor:** Laborda Sebastián fan de Cr7 el GOAT mejor que coassolo cracken idolo master
+**Autor:** Laborda Sebastián 
 
 ## ⚙️ Requisitos previos
 
