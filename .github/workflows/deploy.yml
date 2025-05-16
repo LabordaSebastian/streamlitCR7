@@ -2,8 +2,7 @@ name: Deploy FastAPI App on Merge to Develop
 
 on:
   push:
-    branches:
-      - develop
+    branches: [develop]  # Formato simplificado y correcto
 
 jobs:
   deploy:
@@ -11,17 +10,17 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Stop existing container
-      run: docker-compose down || true
+      - name: Stop existing container
+        run: docker compose down || true
 
-    - name: Build and run new container
-      run: docker-compose up -d --build
+      - name: Build and run new container
+        run: docker compose up -d --build
 
-    - name: Notify on Discord
-      uses: Ilshidur/action-discord@master
-      with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        message: "🚀 FastAPI desplegado en servidor local tras merge en develop."
+      - name: Notify on Discord
+        uses: Ilshidur/action-discord@master
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: "🚀 FastAPI desplegado en servidor local tras merge en develop."
