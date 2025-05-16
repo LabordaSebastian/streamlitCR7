@@ -25,4 +25,3 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           message: "🚀 FastAPI deployed on local server after merge to develop"
-          avatar: "https://emoji.gg/assets/emoji/1999_rocket.png"
