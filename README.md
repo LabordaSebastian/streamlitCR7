@@ -3,6 +3,8 @@
 
 Una aplicación hecha con [Streamlit](https://streamlit.io) para explorar estadísticas de goles de Cristiano Ronaldo por temporada, club, competencia y tipo de gol.
 
+**Autor:** Laborda Sebastián
+
 ## 🚀 ¿Cómo usar esta app?
 
 ### 1. Clonar el repositorio
