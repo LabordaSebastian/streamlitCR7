@@ -20,8 +20,9 @@ jobs:
       - name: Build and run new container
         run: docker compose -f streamlit/docker-compose.yml up -d --build
 
-      - name: Notify on Discord
-        uses: Ilshidur/action-discord@master
+      - name: Notificar en Discord
+        uses: tsickert/discord-webhook@v5
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "🚀 FastAPI desplegado en servidor local tras merge en develop."
+          webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
+          content: "✅ Deploy completado correctamente (vía runner)"
+
