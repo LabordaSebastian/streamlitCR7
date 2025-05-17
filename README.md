@@ -42,6 +42,15 @@ Visita [http://localhost:8501](http://localhost:8501) para ver la aplicación en
 
 ---
 
+## ✅ Ejecución exitosa de GitHub Actions
+
+A continuación se muestran capturas de pantalla que demuestran que la configuración de GitHub Actions funcionó correctamente:
+
+![Build exitoso](streamlit/build-success.png)
+![Deploy exitoso](streamlit/deploy-success.png)
+
+---
+
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
