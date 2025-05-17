@@ -20,6 +20,9 @@ jobs:
       - name: Build and run new container
         run: docker compose -f streamlit/docker-compose.yml up -d --build
 
+      - name: Verificar secreto
+        run: echo "${{ secrets.DISCORD_WEBHOOK }}" | grep discord
+
       - name: Notificar en Discord
         uses: tsickert/discord-webhook@v5
         with:
