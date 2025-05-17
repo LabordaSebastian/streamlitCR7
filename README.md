@@ -46,8 +46,8 @@ Visita [http://localhost:8501](http://localhost:8501) para ver la aplicación en
 
 A continuación se muestran capturas de pantalla que demuestran que la configuración de GitHub Actions funcionó correctamente:
 
-![Build exitoso](streamlit/build-success.png)
-![Deploy exitoso](streamlit/deploy-success.png)
+![Build exitoso](streamlit/actions.png)
+![Deploy exitoso](streamlit/actions2.png)
 
 ---
 
